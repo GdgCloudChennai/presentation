@@ -1,0 +1,85 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: devfest2019-app-ns
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: devfest2019-app-depl
+   namespace: devfest2019-app-ns
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devfest2019-app
+  template:
+     metadata:
+       labels:
+         app: devfest2019-app
+     spec:
+       containers:
+         - name: devfest2019-app-cont
+           image: asia.gcr.io/devfest2019-gke-demo/gdg-devfest2019-app-cloud:10.0
+           ports:
+             - containerPort: 80
+           env:
+             - name: MY_NODE_NAME
+               valueFrom:
+                 fieldRef:
+                   fieldPath: spec.nodeName
+             - name: MY_POD_NAME
+               valueFrom:
+                 fieldRef:
+                   fieldPath: metadata.name
+           resources:
+             requests:
+               cpu: "200m"
+             limits: 
+               cpu: "500m"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: devfest2019-app-serv
+  namespace: devfest2019-app-ns
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: devfest2019-app
+  type: NodePort
+
+---
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: devfest2019-app-ingr
+  namespace: devfest2019-app-ns
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: "devfest2019-app-ip-demo"
+spec:
+  backend:
+    serviceName: devfest2019-app-serv
+    servicePort: 8080
+---
+
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: devfest2019-app-hpa
+  namespace: devfest2019-app-ns
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: devfest2019-app-depl
+  minReplicas: 1
+  maxReplicas: 25
+  targetCPUUtilizationPercentage: 50
