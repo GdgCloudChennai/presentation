@@ -5,6 +5,7 @@ Presentations from the GDG Cloud Chennai meetup event.
 
 | Date  | Event Name | Speaker / Facilitator | Event Link | Document/Presentation |
 | --- | --- | --- | --- | --- |
+| 31-Dec-2022  | Cloud Hero - Kubernetes | Manikandan, Jenisten, Mohammed | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-cloud-hero-kubernetes/) | [1](https://www.cloudskillsboost.google/games/3681) |
 | 18-Dec-2022  | Cloud Hero - Migrating Virtual Machines | Manikandan, Jenisten | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-cloud-hero-migrating-virtual-machines/) | [1](https://www.cloudskillsboost.google/games/3658) |
 | 20-Nov-2022  | Cloud Hero - Serverless ML | Manikandan, Jenisten, Mohammed | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-cloud-hero-serverless-ml/) | [1](https://www.cloudskillsboost.google/games/3512) |
 | 30-Oct-2022  | Cloud Hero - BigQuery Analytics & Machine Learning | Manikandan, Jenisten, Mohammed | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-cloud-hero-bigquery-analytics-machine-learning/) | [1](https://www.cloudskillsboost.google/games/3396) |
