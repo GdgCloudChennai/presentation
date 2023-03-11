@@ -5,7 +5,7 @@ Presentations from the GDG Cloud Chennai meetup event.
 
 | Date  | Event Name | Speaker / Facilitator | Event Link | Document/Presentation |
 | --- | --- | --- | --- | --- |
-| 11-Feb-2023  | Application Modernisation with Google Cloud Anthos | Biswanath Giri | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-application-modernisation-with-google-cloud-anthos/) | [Coming soon]() |
+| 11-Feb-2023  | Application Modernisation with Google Cloud Anthos | Biswanath Giri | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-application-modernisation-with-google-cloud-anthos/) | [1](https://github.com/GdgCloudChennai/presentation/tree/master/11-Feb-2023%20-%20Application%20Modernisation%20with%20Google%20Cloud%20Anthos) |
 | 31-Dec-2022  | Cloud Hero - Kubernetes | Manikandan, Jenisten, Mohammed | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-cloud-hero-kubernetes/) | [1](https://www.cloudskillsboost.google/games/3681) |
 | 18-Dec-2022  | Cloud Hero - Migrating Virtual Machines | Manikandan, Jenisten | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-cloud-hero-migrating-virtual-machines/) | [1](https://www.cloudskillsboost.google/games/3658) |
 | 20-Nov-2022  | Cloud Hero - Serverless ML | Manikandan, Jenisten, Mohammed | [Click here](https://gdg.community.dev/events/details/google-gdg-cloud-chennai-presents-cloud-hero-serverless-ml/) | [1](https://www.cloudskillsboost.google/games/3512) |
